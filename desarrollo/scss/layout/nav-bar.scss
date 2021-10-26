@@ -1,0 +1,163 @@
+.menu{
+    background-color: $principal;
+    height: 75px;
+    //Usa todo el ancho que se estÃ© viendo
+    width: 100vw;
+    display: flex;
+    //Dividimos el espacio de todos los elementos de nuestra barra
+    justify-content: space-between;
+    align-items: center;
+    //border-bottom: 1px solid white;
+    //PequeÃ±a sombra: 5px en x, 0 en y, 10px de difuminacion y color con 0.6 de opacidad
+    //box-shadow: 5px 0 10px rgba(0, 0 ,0 , .6);
+
+    font-family: $fuentePrincipal;
+    color: $cafePrincipal;
+
+    .logo{
+        
+        font-size: 35px;
+        // padding: 0 80px;
+        padding-left: 35px;
+        font-weight: bold;
+    }
+
+    .logo__enlace{
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-decoration: none;
+        color: $cafePrincipal;
+        p{
+            
+            padding: 0;
+            margin: 0;
+            margin-left: .6rem;
+
+        }
+
+        picture{
+            display: flex;
+            align-items: center;
+        }
+
+        img{
+            width: 3rem;
+            height: 4rem;
+            
+        }
+    }
+}
+.menu_items{
+    display: flex;
+    //Le quitamos los circulos a la lista
+    list-style: none;
+    margin-right: 30px;
+    li{
+        border-radius: 3px;
+        margin: 0 5px;
+        // &:hover, &.active{
+        //     // background-color: rgba(0, 0 ,0 , .3);
+        //     // //*Para que el cambio cuando ponemos el cursor encima no sea tan brusco
+        //     // transition: .4s;
+        // }
+        a{
+            font-family: $fuenteSecundaria;
+            padding: 7px 13px;
+            text-decoration: none;
+            font-size: 18px;
+            //*Para que los links ocupen todo el espacio disponible
+            display: block;
+            //text-transform: uppercase;
+            color: $cafePrincipal;
+        }        
+    }
+}
+
+.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: $cafePrincipal;
+    cursor: pointer;
+    display: none;
+}
+
+//*CLASE PARA MOVILES
+ul.mostrar{
+    //*Es el tamaÃ±o del nav en moviles.
+    top:65px;
+    margin-top: 0;
+    padding: 0;
+    left:0;
+}
+
+
+// @media screen and (max-width: 950px){
+//     .logo{
+//         font-size: 30px;
+//         padding-left: 35px;
+//     }
+
+//     .menu_items li a{
+//         font-size: 16px;
+//     }
+// }
+
+//Para moviles
+@media screen and (max-width: 950px){
+    .menu{
+        height: 65px;
+    }
+    .btn_menu{
+        display: inline-flex;
+    }
+    .menu_items{
+        //Le damos una posicion fija para poder sacarla del viewport
+        position: fixed;
+        width: 100vw;
+        //*TRUCO: El tamaÃ±o de la lista de enlaces debe ser de toda la pantalla (100%), menos el tamaÃ±o de la barra (65px)
+        height: calc(100% - 65px);
+        background: $secundario;
+        //Sacamos arriba, fuera de la pantalla
+        top: 49px;
+        left: -120vw;
+        text-align: center;
+        transition: all .8s;
+
+        //Para que se muestren uno sobre el otro
+        flex-direction: column;
+    }
+    .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+
+        &:hover{
+            background: none;
+        }
+
+        a{
+            font-size: 20px;
+            color: $cafePrincipal;
+            font-weight: bold;
+            &:hover{
+                color: #e9183b;
+            }
+        }       
+    }
+    .menu .logo{
+        font-size: 25px;
+        padding-left: 0px;
+    }
+}
+
+//Cuando giremos el dispositivo de forma horizontal
+@media screen and (max-width: 850px) and(orientation: landscape){
+    .menu li{
+        margin: 5px 0 0 0;
+    }
+    .menu_items{
+        //Para que el usuario sea capaz de arrastrar el ul y ver todas las opciones disponibles
+        overflow: scroll;
+        height: calc(100%-65px);
+    }
+}

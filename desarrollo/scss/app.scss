@@ -1,0 +1,14 @@
+/*TDOS LOS ARCHIVOS A COMPILAR DEBEN IMPORTARSE*/
+@import 'base/normalize';
+/*Como importar una fuente de Google Fonts:*/
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+
+/*
+*Para importar archivos del layout es lo mismo. Por ejemplo:
+*@import 'layout/header';
+*/
+
+@import 'layout/nav-bar.scss';
