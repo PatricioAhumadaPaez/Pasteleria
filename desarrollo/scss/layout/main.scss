@@ -1,5 +1,57 @@
-main{
+.productos{
     // margin-top: -1rem;
     background-color: white;
     z-index: 3;
+
+    h2{
+        text-align: center;
+        font-size: 3.3rem;
+        margin-bottom: 5rem;
+    }
+
+
+    margin-bottom: 50rem;
+}
+.productos__contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    transition: all .5s ease-in-out;
+    a:hover{
+    
+
+        color: $principal;
+        transform: scale(1.05);
+    transform-origin: center center;
+    }
+}
+.producto__lista{
+    color: #fff;
+    text-align: center;
+    // width: 15rem;
+    height: 18rem;
+    // margin: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // transition: all .5s ease-in-out;
+
+ 
+}
+.producto__lista-tortas{
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.336) 0%, rgba(15, 15, 16, 0.5) 35%, rgba(122,126,127,0.5189426112241772) 100%), url(/productolisto/img/producto__torta.webp);
+    background-position: center center;
+    background-size: cover;  
+}
+
+.producto__lista-dulces{
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.336) 0%, rgba(15, 15, 16, 0.5) 35%, rgba(122,126,127,0.5189426112241772) 100%), url(/productolisto/img/producto__dulces.webp);
+    background-position: center center;
+    background-size: cover;  
+}
+.producto__lista-postres{
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.336) 0%, rgba(15, 15, 16, 0.5) 35%, rgba(122,126,127,0.5189426112241772) 100%), url(/productolisto/img/producto__postres.webp);
+    background-position: center center;
+    background-size: cover;  
 }

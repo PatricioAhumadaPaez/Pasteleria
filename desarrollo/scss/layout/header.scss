@@ -1,3 +1,8 @@
+
+header{
+    background-color: $principal;
+}
+
 .header{
     
     position: relative;
@@ -19,7 +24,7 @@ display: grid;
 
 
 .header__contenedor{
-    color: $cafePrincipal;
+    // color: $cafePrincipal;
     display: flex;
     flex-direction: column;
     justify-content: center;
