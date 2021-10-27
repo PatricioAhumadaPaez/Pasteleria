@@ -1,0 +1,59 @@
+.header{
+    
+    position: relative;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+    background-color: $principal;
+
+    h1{
+        font-family: $fuenteTerciaria;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}
+
+header{
+    
+}
+
+.header__contenedor{
+    color: $cafePrincipal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:35rem;
+    font-family: $fuentePrincipal;
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    // position: relative;
+    margin-bottom: 7rem;
+    z-index: 1;
+}
+
+.header__pastel{
+    
+
+   
+    img{
+        position:absolute;
+        bottom: 0;
+        right: 0;
+        // z-index: 0;
+        max-width: 40rem;
+        width: 90%;
+        max-height: 35rem;
+        height: 90%;
+    }
+    
+}
+
+.waves{
+    position: absolute;
+    //*Para que el wave no impida acceder a los enlaces de las rrss
+    bottom: 0;
+    width: 100%;
+}

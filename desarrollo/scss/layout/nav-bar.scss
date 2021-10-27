@@ -2,7 +2,7 @@
     background-color: $principal;
     height: 75px;
     //Usa todo el ancho que se estÃ© viendo
-    width: 100vw;
+    // width: 100vw;
     display: flex;
     //Dividimos el espacio de todos los elementos de nuestra barra
     justify-content: space-between;
@@ -10,7 +10,7 @@
     //border-bottom: 1px solid white;
     //PequeÃ±a sombra: 5px en x, 0 en y, 10px de difuminacion y color con 0.6 de opacidad
     //box-shadow: 5px 0 10px rgba(0, 0 ,0 , .6);
-
+    // z-index: 1;
     font-family: $fuentePrincipal;
     color: $cafePrincipal;
 
@@ -29,7 +29,7 @@
         text-decoration: none;
         color: $cafePrincipal;
         p{
-            
+            font-size: 2.5rem;
             padding: 0;
             margin: 0;
             margin-left: .6rem;
@@ -65,7 +65,7 @@
             font-family: $fuenteSecundaria;
             padding: 7px 13px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px;
             //*Para que los links ocupen todo el espacio disponible
             display: block;
             //text-transform: uppercase;
@@ -123,7 +123,7 @@ ul.mostrar{
         left: -120vw;
         text-align: center;
         transition: all .8s;
-
+z-index: 1;
         //Para que se muestren uno sobre el otro
         flex-direction: column;
     }

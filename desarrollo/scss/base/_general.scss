@@ -1,0 +1,48 @@
+html{
+    a{
+        text-decoration: 0;
+    }
+
+    p{
+        text-align: center;
+        padding: 0;
+        margin: .5rem 0;
+    }
+
+    h1,h2,h3{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.contenedor{
+    max-width: 60rem;
+    width: 95%; //cuando el tamaño sea menor que 120rem, entonces ocupa un 95% de la pantalla
+    margin: 0 auto;
+}
+
+.rrss{
+    margin-top: 1.3rem;
+    display: flex;
+    svg{
+        // fill: $cafePrincipal;
+        max-width: 2rem;
+        max-height: 2rem;
+        margin-right: 1rem;
+        path{
+            fill: $cafePrincipal;
+        }
+
+        
+    }
+
+    a{
+        &:hover{
+            path{
+                fill: $negro;
+            }
+            
+        }
+    }
+}
+
