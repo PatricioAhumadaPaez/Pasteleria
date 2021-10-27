@@ -2,7 +2,7 @@
     
     position: relative;
 display: grid;
-grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     background-color: $principal;
 
     h1{
@@ -34,26 +34,33 @@ header{
     z-index: 1;
 }
 
-.header__pastel{
+// .header__pastel{
     
 
    
-    img{
-        position:absolute;
-        bottom: 0;
-        right: 0;
-        // z-index: 0;
-        max-width: 40rem;
-        width: 90%;
-        max-height: 35rem;
-        height: 90%;
-    }
+//     img{
+//         position:absolute;
+//         bottom: 0;
+//         right: 0;
+//         // z-index: 0;
+//         max-width: 40rem;
+//         width: 90%;
+//         max-height: 35rem;
+//         height: 90%;
+//     }
     
+// }
+
+
+.imagen__pastel{
+    background-image: url(/productolisto/img/header-pastel.webp);
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .waves{
     position: absolute;
     //*Para que el wave no impida acceder a los enlaces de las rrss
-    bottom: 0;
+    bottom: -.5rem;
     width: 100%;
 }
