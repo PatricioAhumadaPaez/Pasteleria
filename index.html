@@ -9,7 +9,8 @@
     <!-- Icono de Menu de hamburguesa-->
     <script src="https://kit.fontawesome.com/ccf51fc950.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!---Importar la hoja de estilos CSS-->
     <link rel="stylesheet" href="productolisto/css/app.css">
@@ -32,7 +33,7 @@
             </label>
             <ul class=" menu_items">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Productos</a></li>
+                        <li><a href="#productos">Productos</a></li>
                         <li><a href="#">Servicios</a></li>
                         <li><a href="#">Nosotros</a></li>
 
@@ -50,13 +51,13 @@
                 <p>Contamos con los mejores pasteles de la región.</p>
                 <p>¿Y tú qué esperas para deleitar tu paladar?</p>
                 <div class="rrss">
-                    <a href="#">
+                    <a href="https://www.whatsapp.com/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="2489" height="2500"
                             viewBox="0 0 737.509 740.824">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M630.056 107.658C560.727 38.271 468.525.039 370.294 0 167.891 0 3.16 164.668 3.079 367.072c-.027 64.699 16.883 127.855 49.016 183.523L0 740.824l194.666-51.047c53.634 29.244 114.022 44.656 175.481 44.682h.151c202.382 0 367.128-164.689 367.21-367.094.039-98.088-38.121-190.32-107.452-259.707m-259.758 564.8h-.125c-54.766-.021-108.483-14.729-155.343-42.529l-11.146-6.613-115.516 30.293 30.834-112.592-7.258-11.543c-30.552-48.58-46.689-104.729-46.665-162.379C65.146 198.865 202.065 62 370.419 62c81.521.031 158.154 31.81 215.779 89.482s89.342 134.332 89.311 215.859c-.07 168.242-136.987 305.117-305.211 305.117m167.415-228.514c-9.176-4.591-54.286-26.782-62.697-29.843-8.41-3.061-14.526-4.591-20.644 4.592-6.116 9.182-23.7 29.843-29.054 35.964-5.351 6.122-10.703 6.888-19.879 2.296-9.175-4.591-38.739-14.276-73.786-45.526-27.275-24.32-45.691-54.36-51.043-63.542-5.352-9.183-.569-14.148 4.024-18.72 4.127-4.11 9.175-10.713 13.763-16.07 4.587-5.356 6.116-9.182 9.174-15.303 3.059-6.122 1.53-11.479-.764-16.07-2.294-4.591-20.643-49.739-28.29-68.104-7.447-17.886-15.012-15.466-20.644-15.746-5.346-.266-11.469-.323-17.585-.323-6.117 0-16.057 2.296-24.468 11.478-8.41 9.183-32.112 31.374-32.112 76.521s32.877 88.763 37.465 94.885c4.587 6.122 64.699 98.771 156.741 138.502 21.891 9.45 38.982 15.093 52.307 19.323 21.981 6.979 41.983 5.994 57.793 3.633 17.628-2.633 54.285-22.19 61.932-43.616 7.646-21.426 7.646-39.791 5.352-43.617-2.293-3.826-8.41-6.122-17.585-10.714" />
                         </svg></a>
-                    <a href="#">
+                    <a href="https://twitter.com/">
                         <svg clip-rule="evenodd" fill-rule="evenodd" height="1684" stroke-linejoin="round"
                             stroke-miterlimit="2" viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404"
                             width="2500" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +66,7 @@
                                 fill="#1da1f2" fill-rule="nonzero" />
                         </svg>
                     </a>
-                    <a href="#">
+                    <a href="https://www.pinterest.cl/">
                         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 796.8 1024.2" width="1945"
                             height="2500">
                             <style>
@@ -128,7 +129,7 @@
 
     </header>
 
-    <main class="productos">
+    <main id="productos" class="productos">
 
 
         <h2>Nuestra especialidad</h2>
@@ -167,56 +168,210 @@
 
         <h2>Nuestros productos <span>destacados</span> del mes</h2>
 
-        <div id="carouselExampleCaptions" class="carousel slide carrusel" data-bs-ride="carousel">
+
+
+        <div id="carouselExampleDark" class="carousel carrusel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item item-1 active">
-                <!-- <img src="/productolisto/img/slide-1.webp" class="d-block w-100" alt="..."> -->
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item item-2">
-                <!-- <img src="/productolisto/img/slide-2.webp" class="d-block w-100" alt="..."> -->
-                
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item item-3">
-                <!-- <img src="/productolisto/img/slide-3.webp" class="d-block w-100" alt="..."> -->
-                
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </section>
-    
+                <div class="carousel-item item-1 active" data-bs-interval="5000">
 
-    
+
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>First slide label</h5> -->
+                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item item-2" data-bs-interval="5000">
+
+
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Second slide label</h5> -->
+                        <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item item-3" data-bs-interval="5000">
+
+
+
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Third slide label</h5> -->
+                        <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </section>
+
+
+    <section class="nosotros">
+        <!-- <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 280" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,168L240,177.3C480,187,960,205,1440,186.7C1920,168,2400,112,2880,102.7C3360,93,3840,131,4320,163.3C4800,196,5280,224,5760,224C6240,224,6720,196,7200,168C7680,140,8160,112,8640,98C9120,84,9600,84,10080,107.3C10560,131,11040,177,11520,205.3C12000,233,12480,243,12960,224C13440,205,13920,159,14400,158.7C14880,159,15360,205,15840,214.7C16320,224,16800,196,17280,163.3C17760,131,18240,93,18720,74.7C19200,56,19680,56,20160,74.7C20640,93,21120,131,21600,158.7C22080,187,22560,205,23040,191.3C23520,177,24000,131,24480,98C24960,65,25440,47,25920,74.7C26400,103,26880,177,27360,214.7C27840,252,28320,252,28800,214.7C29280,177,29760,103,30240,79.3C30720,56,31200,84,31680,84C32160,84,32640,56,33120,46.7C33600,37,34080,47,34320,51.3L34560,56L34560,280L34320,280C34080,280,33600,280,33120,280C32640,280,32160,280,31680,280C31200,280,30720,280,30240,280C29760,280,29280,280,28800,280C28320,280,27840,280,27360,280C26880,280,26400,280,25920,280C25440,280,24960,280,24480,280C24000,280,23520,280,23040,280C22560,280,22080,280,21600,280C21120,280,20640,280,20160,280C19680,280,19200,280,18720,280C18240,280,17760,280,17280,280C16800,280,16320,280,15840,280C15360,280,14880,280,14400,280C13920,280,13440,280,12960,280C12480,280,12000,280,11520,280C11040,280,10560,280,10080,280C9600,280,9120,280,8640,280C8160,280,7680,280,7200,280C6720,280,6240,280,5760,280C5280,280,4800,280,4320,280C3840,280,3360,280,2880,280C2400,280,1920,280,1440,280C960,280,480,280,240,280L0,280Z"></path></svg> -->
+
+        <div class="nosotros__contenedor">
+
+            <div class="nosotros__contenido">
+                <h3>Nosotros</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt harum ab reiciendis illum id
+                    molestias
+                    placeat ratione odit autem, provident itaque vitae voluptatem minus, est sapiente quo, beatae
+                    deserunt
+                    eum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt harum ab reiciendis illum id
+                    molestias
+                    placeat ratione odit autem, provident itaque vitae voluptatem minus, est sapiente quo, beatae
+                    deserunt
+                    eum.</p>
+
+
+                <?xml version="1.0" standalone="no"?>
+                <!DOCTYPE svg
+                    PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="2552.000000pt" height="464.000000pt"
+                    viewBox="0 0 2552.000000 464.000000" preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                        Created by potrace 1.16, written by Peter Selinger 2001-2019
+                    </metadata>
+                    <g transform="translate(0.000000,464.000000) scale(0.100000,-0.100000)" fill="#000000"
+                        stroke="none">
+                        <path d="M3108 4415 c-193 -37 -365 -131 -504 -277 -123 -130 -205 -286 -240
+-457 -23 -115 -15 -351 15 -464 44 -167 124 -325 229 -454 l46 -57 -49 34
+c-167 113 -265 216 -480 505 -156 208 -236 293 -317 330 -94 44 -216 28 -275
+-36 -67 -73 -54 -188 36 -325 152 -233 556 -524 901 -649 111 -40 101 -43 -47
+-14 -441 84 -662 191 -1183 575 -91 67 -204 144 -252 171 -208 119 -417 142
+-463 52 -40 -77 0 -175 120 -294 207 -207 596 -395 1080 -520 72 -19 117 -34
+100 -35 -76 -1 -371 -22 -580 -41 -371 -34 -465 -25 -785 77 -94 30 -131 37
+-203 38 -85 1 -90 0 -113 -27 -30 -36 -30 -61 1 -124 31 -62 104 -132 175
+-168 116 -59 334 -95 573 -95 256 0 463 28 815 110 447 105 654 129 935 110
+278 -19 296 -25 97 -33 -866 -33 -1743 -312 -2098 -668 -183 -183 -175 -349
+15 -349 132 0 301 74 503 220 423 307 538 382 715 465 171 81 349 135 579 174
+65 12 121 21 125 20 3 0 -43 -18 -103 -39 -422 -151 -899 -531 -971 -774 -32
+-106 -5 -192 75 -236 66 -36 165 -35 239 4 76 39 170 138 295 311 188 258 324
+406 455 494 85 57 89 58 50 14 -99 -110 -193 -290 -236 -450 -25 -89 -27 -114
+-27 -283 0 -173 2 -191 27 -273 83 -269 258 -471 511 -587 104 -48 180 -68
+298 -79 247 -24 461 51 629 218 126 126 196 272 219 454 25 205 -35 382 -181
+528 -123 124 -267 183 -444 182 -206 -2 -369 -104 -460 -288 -158 -318 57
+-673 396 -653 181 11 320 142 336 318 7 69 -10 103 -53 114 -57 15 -104 -28
+-104 -95 0 -36 -29 -96 -62 -125 -67 -61 -167 -72 -256 -28 -61 30 -96 69
+-130 143 -65 141 22 343 182 421 247 120 569 -68 618 -363 21 -130 -22 -302
+-107 -416 -127 -173 -341 -274 -545 -257 -288 24 -533 196 -655 459 -52 113
+-69 193 -68 332 4 444 313 834 750 946 54 13 110 19 195 19 l118 0 0 148 0
+147 -128 1 c-96 1 -146 6 -205 23 -330 91 -608 367 -697 693 -32 120 -43 247
+-30 346 35 271 189 490 425 608 130 64 231 87 364 82 130 -5 223 -35 324 -105
+190 -129 299 -379 256 -585 -31 -147 -128 -270 -266 -336 -75 -35 -82 -37
+-183 -37 -95 0 -111 3 -162 28 -74 36 -139 102 -175 175 -24 49 -28 69 -28
+142 0 75 3 91 27 132 52 88 151 148 243 148 48 0 129 -45 159 -89 16 -22 30
+-62 36 -97 11 -68 34 -94 84 -94 22 0 40 8 56 25 21 22 22 31 17 89 -8 86 -45
+162 -106 219 -91 85 -194 117 -317 97 -225 -36 -378 -232 -361 -460 11 -140
+63 -248 168 -344 297 -275 813 -112 945 298 22 67 26 100 26 191 1 132 -17
+216 -71 329 -89 190 -245 328 -451 397 -81 27 -113 32 -215 35 -78 2 -147 -2
+-197 -11z" />
+                        <path d="M22024 4296 c-283 -65 -504 -276 -578 -551 -26 -94 -31 -237 -12
+-325 71 -336 412 -561 734 -485 309 73 483 414 353 691 -116 248 -450 322
+-634 141 -68 -67 -99 -132 -105 -223 -4 -65 -2 -73 19 -92 30 -28 80 -29 105
+-1 10 11 24 48 31 82 36 176 228 234 372 110 65 -55 96 -123 95 -208 -4 -343
+-425 -476 -685 -216 -200 201 -183 528 40 752 126 126 255 179 436 179 128 0
+228 -25 350 -88 73 -37 108 -64 186 -142 82 -81 103 -109 142 -190 63 -127 87
+-226 87 -357 0 -374 -217 -718 -555 -883 -147 -72 -223 -90 -377 -90 l-128 0
+0 -150 0 -150 124 0 c103 0 139 -4 212 -25 334 -96 590 -352 690 -690 20 -68
+27 -121 31 -216 7 -161 -10 -247 -77 -384 -120 -245 -339 -401 -611 -435 -202
+-25 -382 41 -522 189 -143 152 -201 368 -147 543 82 265 377 411 605 299 146
+-72 233 -250 192 -392 -31 -105 -126 -185 -232 -196 -66 -7 -117 10 -166 54
+-38 35 -69 105 -69 159 0 27 -44 64 -75 64 -12 0 -35 -10 -50 -22 -26 -20 -27
+-24 -23 -93 14 -222 230 -369 458 -311 200 52 324 215 322 426 -1 222 -138
+410 -349 481 -80 27 -225 32 -313 10 -298 -74 -495 -343 -476 -651 18 -305
+199 -558 478 -670 104 -41 190 -53 332 -47 237 10 430 93 599 256 86 83 145
+163 197 272 168 352 92 831 -182 1144 l-43 49 80 -54 c116 -79 274 -242 398
+-410 224 -302 274 -358 371 -407 91 -46 214 -33 273 30 62 64 64 157 7 270
+-125 246 -569 579 -949 712 -55 19 -96 35 -91 35 30 0 265 -45 359 -70 306
+-79 525 -198 968 -526 240 -178 379 -252 515 -275 163 -28 247 31 215 150 -18
+67 -62 130 -147 211 -211 200 -608 387 -1074 505 l-125 32 159 7 c88 4 232 13
+320 21 507 46 572 44 784 -22 275 -85 273 -85 353 -81 95 4 119 21 119 83 0
+79 -98 193 -210 243 -215 97 -610 117 -1020 51 -68 -11 -239 -46 -380 -79
+-427 -98 -570 -116 -840 -105 -96 4 -200 10 -230 14 l-55 7 75 6 c41 4 158 14
+260 22 489 42 941 146 1315 302 457 192 751 458 695 629 -22 68 -121 92 -244
+60 -145 -38 -243 -94 -528 -302 -495 -360 -717 -465 -1147 -542 -63 -12 -119
+-21 -125 -21 -6 1 32 16 84 35 269 98 539 267 746 467 106 103 161 171 198
+244 93 185 23 324 -162 324 -138 0 -219 -67 -445 -372 -80 -109 -181 -234
+-224 -279 -82 -86 -203 -188 -256 -216 -30 -15 -30 -14 12 33 98 111 182 278
+229 453 22 85 25 116 25 266 1 143 -3 182 -21 247 -89 325 -328 569 -649 664
+-110 32 -320 42 -419 20z" />
+                        <path d="M3839 2673 c-69 -36 -114 -94 -129 -169 -18 -87 -9 -378 13 -429 72
+-163 288 -205 412 -80 68 68 77 109 73 337 -3 217 -11 243 -83 306 -79 70
+-190 83 -286 35z" />
+                        <path d="M21458 2691 c-60 -12 -129 -61 -163 -115 l-30 -49 -3 -212 -3 -211
+28 -54 c95 -182 350 -182 445 -1 28 53 28 54 28 252 0 214 -4 239 -56 306 -47
+62 -160 101 -246 84z" />
+                        <path d="M4440 2608 c-28 -15 -53 -39 -67 -64 -21 -37 -23 -51 -23 -235 0
+-187 1 -198 23 -229 30 -44 65 -69 113 -80 74 -17 146 13 192 80 21 31 22 42
+22 227 0 222 -6 247 -72 291 -57 37 -129 41 -188 10z" />
+                        <path d="M20865 2606 c-39 -17 -70 -52 -90 -98 -11 -29 -15 -76 -15 -203 0
+-177 8 -215 53 -263 55 -59 149 -70 223 -27 73 43 84 79 84 290 0 161 -2 183
+-21 222 -39 80 -149 117 -234 79z" />
+                        <path d="M11118 2555 c-15 -8 -32 -24 -38 -35 -13 -25 -13 -365 0 -391 14 -25
+62 -49 101 -49 22 0 41 10 66 35 l34 34 -3 180 c-3 179 -3 181 -29 207 -32 32
+-93 41 -131 19z" />
+                        <path d="M14240 2558 c-52 -27 -61 -66 -58 -250 l3 -168 28 -27 c22 -23 36
+-28 76 -28 92 0 111 41 111 240 0 141 -9 192 -39 219 -25 23 -89 30 -121 14z" />
+                        <path d="M4900 2543 c-54 -28 -60 -49 -60 -231 0 -178 7 -208 55 -230 47 -21
+94 -15 126 17 l29 29 0 181 0 181 -27 30 c-36 38 -77 46 -123 23z" />
+                        <path d="M20470 2538 c-52 -27 -61 -67 -58 -245 3 -146 5 -164 24 -190 41 -55
+127 -55 168 0 19 25 21 45 24 180 4 160 -4 211 -37 241 -25 23 -89 30 -121 14z" />
+                        <path d="M5190 2330 l0 -80 2870 0 2870 0 0 80 0 80 -2870 0 -2870 0 0 -80z" />
+                        <path d="M11420 2333 l0 -80 278 -6 c260 -5 341 -12 471 -38 l53 -11 -28 -18
+c-40 -24 -68 -57 -96 -110 -32 -63 -33 -205 -1 -265 29 -54 86 -110 142 -137
+65 -32 187 -32 251 1 58 30 116 85 142 136 33 63 37 212 8 288 -58 153 -241
+249 -560 292 -65 9 -232 18 -387 22 l-273 6 0 -80z" />
+                        <path d="M13580 2403 c-434 -29 -666 -120 -752 -292 -20 -39 -23 -62 -23 -151
+0 -123 19 -174 87 -235 63 -58 120 -80 208 -80 90 0 149 24 207 82 58 58 77
+105 81 201 4 74 1 88 -23 137 -14 30 -46 72 -71 94 -53 46 -56 43 91 67 66 10
+196 18 383 21 l282 6 0 78 0 79 -212 -2 c-117 -1 -233 -3 -258 -5z" />
+                        <path d="M14530 2330 l0 -80 2870 0 2870 0 0 80 0 80 -2870 0 -2870 0 0 -80z" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="img__nosotros">
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
 
 
     <!--Importar el archivo javascript-->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 
     <script src="productolisto/js/scripts.min.js"></script>
     <script src="productolisto/js/scrollreveal-config.js"></script>

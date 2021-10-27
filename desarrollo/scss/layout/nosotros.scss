@@ -1,0 +1,57 @@
+
+.nosotros{
+    background-color: $principal;
+    height: 40rem;
+    margin-top: 5rem;
+
+}
+
+
+.nosotros__contenedor{
+    // clip-path: polygon(66% 8%, 100% 0, 100% 44%, 100% 75%, 100% 100%, 0 100%, 0 86%, 0 0, 33% 8%);
+    // margin-top: 3rem;
+    // margin-top: 150px;
+    // z-index: -1;
+
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $principal;
+    img{
+        clip-path: polygon(16% 0, 100% 0%, 100% 100%, 0% 100%);
+        height: 100%;
+        width: 100%;
+    }
+
+    svg{
+        width: 100%;
+        margin-top: 1rem;
+        height: 5rem;
+    }
+}
+
+.nosotros__contenido{
+    // margin-top: 5rem;
+
+    margin-left: 4rem;
+    width: 50vw;
+
+    h3{
+        margin-bottom: 2rem;
+    }
+    p{
+        text-align: left;
+        font-size: 2rem;
+        font-family: $fuenteSecundaria;
+    }
+}
+
+.img__nosotros{
+    width: 50vw;
+    height: 40rem;
+    background-image: url(/productolisto/img/nosotros.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
