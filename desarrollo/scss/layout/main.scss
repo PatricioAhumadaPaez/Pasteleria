@@ -15,7 +15,7 @@
 .productos__contenedor{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
+    gap: 2rem;
     
     a{
         transition: all .5s ease-in-out;
@@ -27,6 +27,18 @@
         color: $principal;
         transform: scale(1.05);
         transform-origin: center center;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .productos__contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:450px){
+    .productos__contenedor{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 .producto__lista{
