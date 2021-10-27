@@ -4,36 +4,32 @@
             color: $dorado;
         }
     }
+    svg{
+        margin-bottom: -10rem;
+        // z-index: 2;
+    }
 }
 
-
-
 .carrusel{
-   
-
     .item-1{
         // height: 100%;
         background-image: url(/productolisto/img/slide-1.webp);
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: contain;
-        
+        background-size: contain;       
     }
     .item-2{
         background-image: url(/productolisto/img/slide-2.webp);
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: contain;
-        
+        background-size: contain;       
     }
     .item-3{
         background-image: url(/productolisto/img/slide-3.webp);
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: contain;
-        
+        background-size: contain;       
     }
-
     .carousel-caption{
         background: none;
     }
@@ -50,4 +46,3 @@
     // background-color: aqua;
     height: 20rem;
 }
-

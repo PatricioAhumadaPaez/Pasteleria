@@ -22,8 +22,14 @@ window.sr = ScrollReveal();
 
     //Para que se despliegue hacia abajo
     sr.reveal('.down',{
+        duration: 1500,
+        origin: 'down',
+        distance: '-50px'
+    });
+
+    sr.reveal('.up',{
         duration: 1000,
-        origin: 'bottom',
+        origin: 'top',
         distance: '-50px'
     });
 
