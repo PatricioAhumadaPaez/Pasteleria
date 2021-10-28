@@ -1,0 +1,52 @@
+.catalogo{
+    margin-top: 5rem;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.541) 0%, rgba(15, 15, 16, 0.582) 35%, rgba(122, 126, 127, 0.63) 100%), url(/productolisto/img/bg-catalogo.webp);
+    background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+}
+
+.catalogo__contenedor{
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p{
+        text-align: left;
+        color: $blanco;
+        font-family: $fuenteCuaternaria;
+        font-size: 3rem;
+    }
+
+    a{
+        transition: all .2s ease-in-out;
+        background-color: $secundario;
+        color: $cafePrincipal;
+        text-transform: uppercase;
+        font-family: $fuenteTerciaria;
+
+        &:hover{
+
+            background-color: $dorado;
+            color: $blanco;
+            transform: scale(1.05);
+        transform-origin: center center;
+        }
+    }
+}
+
+@media screen and (max-width:780px){
+    .catalogo__contenedor{
+        flex-direction: column;
+        
+        p{
+            margin-top: 1rem;
+        }
+        a{
+            text-align: center;
+            
+            margin-bottom: 2rem;
+        }
+    }
+}

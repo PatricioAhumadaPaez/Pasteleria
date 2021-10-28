@@ -17,7 +17,7 @@ window.sr = ScrollReveal();
         duration: 900,
         origin: 'bottom',
         distance: '-50px',
-        delay: 1000
+        delay: 500
     });
 
     //Para que se despliegue hacia abajo
