@@ -40,6 +40,8 @@ body{
 .rrss{
     margin-top: 1.3rem;
     display: flex;
+    align-items: center;
+    // justify-content: center;
     svg{
         // fill: $cafePrincipal;
         max-width: 2rem;
@@ -53,6 +55,21 @@ body{
     }
 
     a{
+        // // svg{
+        //     // margin-left: auto;
+        //     margin-right: auto;
+        //     margin-left: 1rem;
+
+            
+        // // }
+        // &:first-child{
+        //     margin-left: 0;
+        // }
+
+        // svg{
+        //     margin:0 .5rem;
+
+        // }
         &:hover{
             path{
                 fill: $negro;
@@ -61,7 +78,23 @@ body{
         }
     }
 }
+@media screen and (max-width:650px){
+    
 
+    .rrss{
+        justify-content: center;
+
+        a{
+            svg{
+                margin:0 .5rem;
+    
+            }
+        }
+    }
+
+
+
+}
 .boton{
     padding: 1.2rem 2rem;
     // background-color: aqua;

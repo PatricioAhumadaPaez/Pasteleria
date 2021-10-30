@@ -6,7 +6,7 @@ header{
 .header{
     
     position: relative;
-display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: $principal;
 
@@ -71,6 +71,22 @@ display: grid;
 }
 
 @media screen and (max-width: 670px){
+    
+    .header{
+
+        grid-template-columns: repeat(1, 1fr);
+    
+    
+    }
+    .header__contenedor{
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+        p{
+            text-align: center;
+        }
+    }
     .imagen__pastel{
         display: none;
     }

@@ -1,9 +1,11 @@
 /*TDOS LOS ARCHIVOS A COMPILAR DEBEN IMPORTARSE*/
 @import 'base/normalize';
 /*Como importar una fuente de Google Fonts:*/
-@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
+
+
+// @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=block');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=block');
+// @import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import 'base/variables';
 @import 'base/mixins';
