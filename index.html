@@ -8,6 +8,9 @@
     <title>Pastelería</title>
     <meta name="description"
         content="Pasteles y dulces deliciosos en La Serena. Atrévete a probar una nueva experiencia para tu paladar.">
+
+
+    <link rel="shortcut icon" href="/productolisto/img/definitivas/logo-cafe.ico" type="image/x-icon">    
     <!-- Icono de Menu de hamburguesa-->
     <!-- <script src="https://kit.fontawesome.com/ccf51fc950.js" crossorigin="anonymous"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +27,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="menu">
             <label class="logo">
@@ -845,10 +847,10 @@
                 </a>
             </label>
             <ul class=" menu_items">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#header">Home</a></li>
                 <li><a href="#productos">Productos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>              
                 <li><a href="#">Contacto</a></li>
                 <li><a href="tel:+56957364884">(9)58763256</a></li>
             </ul>
@@ -864,7 +866,7 @@
                 </svg></span>
         </nav>
 
-        <div class="header">
+        <div id="header" class="header">
             <div class="header__contenedor down ">
                 <h1>Los mejores pasteles</h1>
                 <p>Contamos con los mejores pasteles de la región.</p>
@@ -1026,11 +1028,11 @@
         </div>
     </section>
 
-    <section id="servicios" class="servicios contenedor">
+    <section id="servicios" class="servicios contenedor up">
         <h2>Servicios</h2>
 
-        <div class="servicios__contenedor">
-            <div>
+        <div class="servicios__contenedor ">
+            <div class="up">
                 <picture>
                     <source srcset="productolisto/img/servicio-personalizados.avif" type="image/avif">
                     <source srcset="productolisto/img/servicio-personalizados.webp" type="image/webp">
@@ -1041,7 +1043,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quam facilis ex dolore sit.
                     Explicabo quasi atque debitis aut similique!</p>
             </div>
-            <div>
+            <div class="up">
                 <picture>
                     <source srcset="productolisto/img/servicio-eventos.avif" type="image/avif">
                     <source srcset="productolisto/img/servicio-eventos.webp" type="image/webp">
@@ -1052,7 +1054,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quam facilis ex dolore sit.
                     Explicabo quasi atque debitis aut similique!</p>
             </div>
-            <div>
+            <div class="up">
                 <picture>
                     <source srcset="productolisto/img/servicio-bodas.avif" type="image/avif">
                     <source srcset="productolisto/img/servicio-bodas.webp" type="image/webp">
@@ -1066,25 +1068,40 @@
         </div>
     </section>
 
-    <section id="clientes">
-        <p>Nuestrps clientes dicen...</p>
-        <div class="clientes__contenedor">
+    <section id="clientes" class="clientes">
+        <p class="clientes__titulo">Nuestros clientes dicen...</p>
+        <div class="clientes__contenedor contenedor">
             <div class="cliente">
-                <img src="" alt="">
+                <div class="cliente__img">
+                    <img src="/productolisto/img/Daniel.webp" alt=Daniel" width="120" height="120">
+                </div>
                 <div class="cliente__comentario">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sequi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, odio?</p>
+                </div>
+            </div>
+            <div class="cliente">
+                <div class="cliente__img">
+                    <img src="/productolisto/img/Sonia.webp" alt=Daniel" width="120" height="120">
+                </div>                
+                <div class="cliente__comentario">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, odio?</p>
+                </div>
+            </div>
+            <div class="cliente">
+                <div class="cliente__img">
+                    <img src="/productolisto/img/Omar.webp" alt=Daniel" width="120" height="120">
+                </div>  
+               
+                <div class="cliente__comentario">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, odio?</p>
                 </div>
             </div>
         </div>
     </section>
-
-
     <!--Importar el archivo javascript-->
-
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script> -->
-
     <script src="/productolisto/js/scrollreveal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"

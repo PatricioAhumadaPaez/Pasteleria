@@ -1,23 +1,23 @@
 window.sr = ScrollReveal();
 
     sr.reveal('.producto__lista-tortas',{
-        duration: 1300,
+        duration: 1000,
         origin: 'bottom',
         distance: '-50px',
     });
 
     sr.reveal('.producto__lista-dulces',{
-        duration: 1100,
+        duration: 1400,
         origin: 'bottom',
         distance: '-50px',
-        delay: 500
+        // delay: 500
     });
 
     sr.reveal('.producto__lista-postres',{
-        duration: 900,
+        duration: 1900,
         origin: 'bottom',
         distance: '-50px',
-        delay: 500
+        // delay: 500
     });
 
     //Para que se despliegue hacia abajo
